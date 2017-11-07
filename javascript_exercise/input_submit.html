@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <header>
+        <title>Input And Output Using Javascript</title>
+        <script language="javascript"><!--
+        
+            function inform(){
+            var name;
+            var address;
+            var email;
+            
+                name = document.text_input.name.value;
+                address = document.text_input.address.value;
+                email = document.text_input.email.value;
+                
+                document.text_input.output.value = "The following information has been added to our guestbook;" +"\n\n" + name + "\n\n" + address + "\n\n" + email;
+            }
+                
+        
+        --></script>
+    </header>
+    
+    <body>
+        <form name="text_input">
+            Name:
+            &nbsp;
+            <input type="text" name="name" value="" size="30">
+            <br><br>
+            Address:
+            &nbsp;
+            <input type="text" name="address" value="" size="50">
+            <br><br>
+            E-mail:
+            &nbsp;
+            <input type="text" name="email" value="" >
+            <br><br>
+                
+                
+            <input type="button" name="submit" value="SUBMIT" style="background-color: forestgreen" onclick="inform()">
+            &nbsp;
+                
+                
+            <input type="reset" name="submit" value="CLEAR YOUR INFORMATION" style="background-color: forestgreen">
+            <br><br>
+                
+                
+            <textarea name="output" value="" rows="10" cols="37"></textarea>
+            
+        </form>
+    </body>
+</html>

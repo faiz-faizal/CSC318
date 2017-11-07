@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <header>
+        <title>Input And Output Using Javascript</title>
+        <script language="javascript"><!--
+        
+            function update(){
+                
+                with( document.storefirm){
+                var contents;
+                contents="";
+                if(item1.checked==true){
+                    contents=contents+"Cat Food \r";
+                }
+                if(item2.checked==true){
+                    contents=contents+"Bat Food \r"; 
+                }
+                if(item3.checked==true){
+                    contents=contents+"Rat Food \r";
+                }
+                if(contents ==""){
+                    contents=contents+"Your cart is empty.";
+                }
+                display.value=contents;
+                    
+                }
+                
+            }
+        
+        --></script>
+    </header>
+    
+    <body>
+        <form name="storefirm">
+            Choose as many of the following pet supplies as you like and click the button to update your shopping cart.
+            <br><br>
+            
+            <input type="checkbox" name=item1>Cat Food</input>
+            <br>
+            <input type="checkbox" name=item2>Bat Food</input>
+            <br>
+            <input type="checkbox" name=item3>Rat Food</input>
+            <br>
+                
+            <input type="button" value="Update Cart" onclick="update()">
+            &nbsp;
+            <br><br>
+            <textarea name=display rows=4 cols=27 wrap=virtual ></textarea>
+            
+            
+           
+        </form>
+    </body>
+</html>
