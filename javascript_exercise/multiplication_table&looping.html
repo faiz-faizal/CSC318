@@ -1,0 +1,51 @@
+<html>
+    
+    <head>
+        <script language="javascript"><!--
+                
+              //MULTIPLICATION TABLE9X9
+                //OUTER LOOP -ROW
+            document.write("<table border=1");
+                for( row=1; row<=9; row++)
+                {
+                    document.write("<tr>");
+                    //INNER LOOP -INNER
+                    for( clm=1; (clm<=9); clm++){
+                        document.write("<td>");
+                        document.write(row*clm + "&nbsp");
+                        document.write("</td>");
+                    }
+                    document.write("</tr>");
+                    document.write("<br>");
+                }
+            document.write("</table>");
+             document.write("<br>");
+             document.write("<br>");
+            
+              
+
+              //TRIANLGE DECREASE 
+                //OUTER LOOP -ROW
+                for( row=1; row<=9; row++)
+                {
+                    
+                    //INNER LOOP -INNER
+                    for( clm=1; clm<=row; clm++){
+                        document.write(row*clm + "&nbsp &nbsp");
+                    }
+                    document.write("<br>");
+                }
+                -->
+        
+        </script>
+    </head>
+    
+    <body>
+    
+    </body>
+</html>
+
+<!-- REFERENCE
+1.https://fahad-cprogramming.blogspot.my/2013/10/c-code-to-print-pattern-of-right.html
+
+-->
