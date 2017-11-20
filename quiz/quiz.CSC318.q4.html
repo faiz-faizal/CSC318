@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Quiz 4</title>
+        
+        <script> language="javascript" > <!--
+        
+        function plus(){
+            var num1;
+            var num2;
+            
+            num1 = document.calculate.num1.value;
+            num2 = document.calculate.num2.value;
+            
+            document.calculate.result.value=(num1 + num2);
+        }
+            
+        function multiply(){
+            var num1;
+            var num2;
+            
+            num1 = document.calculate.num1.value;
+            num2 = document.calculate.num2.value;
+            
+            document.calculate.result.value=(num1 * num2);
+        }
+        --> </script>
+    </head>
+    
+    <body>
+        <form name="calculate">
+        Enter a number in both fields &nbsp; &nbsp; &nbsp;
+            Choose your operation
+            <hr>
+            <input type="text" name="num1" value="" > &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            Add &nbsp;
+            <input type="button" name="plus_button" value="+" onclick="plus()">
+            
+            <input type="text" name="num2" value="" > 
+            
+        
+        </form>
+    </body>
+</html>
