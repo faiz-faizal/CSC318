@@ -1,0 +1,39 @@
+<html>
+<head>
+<script language="javascript"> <!--
+	
+	function inCalc()
+	{
+		with(document.inForm)
+		{
+		
+			var cel;
+			var fah;
+			//assign cel with the celsius that user input
+			cel = inText.value;
+			cel = parseFloat(cel);
+			if( cel > 50 )
+			{
+				alert("Your input in up to 50 degree celsius,\n Please input less than 50 degree celsius")
+			}
+			else
+			{
+				fah = (cel*(9/5)) = 32;
+				alert(cel + " degree celsius in fahrenheit is " + fah);
+			}
+			
+		}	
+	}
+--> 
+</script>
+</head>
+<body>
+<form name="inForm">
+	<b>CELCIUS</b>&nbsp;&nbsp;<b>FAHRENHEIT</b>
+	<br>
+	<input type="text" name="inText" value="">
+	<input type="button" name="inSubmit" value="Submit" onclick="inCalc()">
+	
+</form>
+</body>
+</html>
